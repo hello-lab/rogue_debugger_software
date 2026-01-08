@@ -61,15 +61,17 @@ This will install:
 
 ### 3.1 Create the `.env` file
 
-In the project root directory, create a file named `.env`:
+In the project root directory, copy the example file and edit it:
 
 ```bash
 # On macOS/Linux:
-touch .env
+cp .env.example .env
 
 # On Windows:
-type nul > .env
+copy .env.example .env
 ```
+
+Or create a new file named `.env` manually.
 
 ### 3.2 Add Required Variables
 

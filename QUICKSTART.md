@@ -14,7 +14,13 @@ npm install
 ```
 
 ## 3. Create `.env` File
-Create a file named `.env` in the project root with:
+Copy the example and edit with your credentials:
+```bash
+cp .env.example .env  # Mac/Linux
+copy .env.example .env  # Windows
+```
+
+Or create `.env` manually with:
 ```env
 SUPABASE_URL=your_supabase_url
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
