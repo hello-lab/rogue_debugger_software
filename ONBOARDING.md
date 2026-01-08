@@ -292,7 +292,9 @@ lsof -ti:3001 | xargs kill -9
 
 Or change the port in `index.js`:
 ```javascript
-app.listen(3001, () => { // Change 3001 to another port
+app.listen(3002, () => { // Changed from 3001 to 3002
+  console.log("Auth server running on http://localhost:3002")
+})
 ```
 
 ### Problem: Can't Access Server from External Network

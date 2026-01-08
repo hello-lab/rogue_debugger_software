@@ -22,11 +22,11 @@ copy .env.example .env  # Windows
 
 Or create `.env` manually with:
 ```env
-SUPABASE_URL=your_supabase_url
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-GOOGLE_CLIENT_EMAIL=your_service_account_email
+SUPABASE_URL=your_supabase_url_here
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key_here
+GOOGLE_CLIENT_EMAIL=your_google_service_account_email_here
 GOOGLE_PRIVATE_KEY="your_private_key_here"
-GOOGLE_SHEET_ID=your_sheet_id
+GOOGLE_SHEET_ID=your_google_sheet_id_here
 ```
 
 ## 4. Run Server
