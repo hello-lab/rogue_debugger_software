@@ -4,11 +4,12 @@ Authentication server for the Rogue Debugger project.
 
 ## 🚀 Quick Start
 
-**New participant?** Follow our comprehensive step-by-step guide:
+**New participant?** We have two guides for you:
 
-👉 **[ONBOARDING.md](ONBOARDING.md)** 👈
+👉 **[QUICKSTART.md](QUICKSTART.md)** - Fast setup (5 minutes)  
+👉 **[ONBOARDING.md](ONBOARDING.md)** - Complete guide with detailed explanations
 
-The onboarding guide covers:
+The comprehensive onboarding guide covers:
 - Prerequisites and installation
 - Environment configuration
 - Port forwarding setup (Windows, macOS, Linux)
