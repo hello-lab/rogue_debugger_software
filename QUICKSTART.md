@@ -1,0 +1,61 @@
+# Quick Setup Guide
+
+For detailed instructions, see [ONBOARDING.md](ONBOARDING.md).
+
+## 1. Install Prerequisites
+- Node.js 18+ ([download](https://nodejs.org/))
+- Git ([download](https://git-scm.com/downloads))
+
+## 2. Clone and Setup
+```bash
+git clone https://github.com/hello-lab/rogue_debugger_software.git
+cd rogue_debugger_software
+npm install
+```
+
+## 3. Create `.env` File
+Copy the example and edit with your credentials:
+```bash
+cp .env.example .env  # Mac/Linux
+copy .env.example .env  # Windows
+```
+
+Or create `.env` manually with:
+```env
+SUPABASE_URL=your_supabase_url_here
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key_here
+GOOGLE_CLIENT_EMAIL=your_google_service_account_email_here
+GOOGLE_PRIVATE_KEY="your_private_key_here"
+GOOGLE_SHEET_ID=your_google_sheet_id_here
+```
+
+## 4. Run Server
+```bash
+node index.js
+```
+
+Server runs on `http://localhost:3001`
+
+## 5. Port Forwarding (Optional)
+If others need to access your server:
+
+### Quick Option: Use ngrok
+```bash
+# Install from https://ngrok.com/download
+ngrok http 3001
+```
+
+### Router Option:
+1. Find your local IP: `ipconfig` (Windows) or `ifconfig` (Mac/Linux)
+2. Access router (usually `192.168.1.1`)
+3. Forward external port 3001 to your local IP:3001
+
+## Common Issues
+
+**"Missing SUPABASE_URL"** → Check `.env` file exists and is configured
+
+**"Port already in use"** → Change port in `index.js` or kill process using port 3001
+
+**"Email not authorized"** → Contact organizer to add your email to allowlist
+
+For more help, see [ONBOARDING.md](ONBOARDING.md#troubleshooting)
